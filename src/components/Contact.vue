@@ -14,11 +14,11 @@ const links = [
     { label: 'Email', value: EMAIL, href: `mailto:${EMAIL}` },
     { label: 'GitHub', value: '@frosdc', href: 'https://github.com/frosdc' },
     { label: 'LinkedIn', value: 'Fros Dela Cruz', href: 'https://www.linkedin.com/in/frosarydelacruz/' },
-    {
-        label: 'YouTube',
-        value: '@smthrns9166',
-        href: 'https://www.youtube.com/@smthrns9166',
-    },
+    // {
+    //     label: 'YouTube',
+    //     value: '@smthrns9166',
+    //     href: 'https://www.youtube.com/@smthrns9166',
+    // },
 ]
 
 function toTop(e: MouseEvent) {

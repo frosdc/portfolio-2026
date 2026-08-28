@@ -3,6 +3,7 @@ import { useTemplateRef } from 'vue'
 import { useSplitReveal } from '../composables/useSplit'
 import { artPieces } from '../data/art'
 import SectionHead from './SectionHead.vue'
+import Sketch from './Sketch.vue';
 
 const root = useTemplateRef<HTMLElement>('root')
 useSplitReveal(root)
@@ -35,36 +36,40 @@ const hang = [
                 </p>
             </div>
         </div>
+        <div class="md:relative md:flex md:flex-row-reverse">
+            <div class=" mt-16 grid grid-cols-6 gap-gutter md:mt-32 md:grid-cols-12 md:gap-y-32">
+                <Sketch
+                    class="hidden md:block pointer-events-none absolute inset-0 z-0 opacity-10 text-ink scale-120 translate-x-[35%]" />
+                <figure v-for="(piece, i) in artPieces" :key="piece.id" class="col-span-6 m-0"
+                    :class="hang[i % hang.length].span" :data-speed="hang[i % hang.length].speed">
+                    <div class="group relative w-full overflow-hidden bg-[#ecebe7]" :class="hang[i % hang.length].ratio"
+                        data-cursor="Viewing" data-reveal>
+                        <img v-if="piece.image" :src="piece.image" :alt="piece.caption"
+                            class="absolute inset-0 h-full w-full object-cover transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] grayscale group-hover:grayscale-0 group-hover:scale-[1.04]"
+                            loading="lazy" />
+                        <div v-else
+                            class="absolute inset-0 transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
+                            :class="piece.gradient"></div>
+                    </div>
 
-        <div class="mt-16 grid grid-cols-6 gap-gutter md:mt-32 md:grid-cols-12 md:gap-y-32">
-            <figure v-for="(piece, i) in artPieces" :key="piece.id" class="col-span-6 m-0"
-                :class="hang[i % hang.length].span" :data-speed="hang[i % hang.length].speed">
-                <div class="group relative w-full overflow-hidden bg-[#ecebe7]" :class="hang[i % hang.length].ratio"
-                    data-cursor="Viewing" data-reveal>
-                    <img v-if="piece.image" :src="piece.image" :alt="piece.caption"
-                        class="absolute inset-0 h-full w-full object-cover transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] grayscale group-hover:grayscale-0 group-hover:scale-[1.04]"
-                        loading="lazy" />
-                    <div v-else
-                        class="absolute inset-0 transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
-                        :class="piece.gradient"></div>
-                </div>
-
-                <figcaption class="mt-4 flex items-baseline justify-between gap-4 border-t border-ink/15 pt-3"
-                    data-reveal>
-                    <span class="placard flex gap-3">
-                        <span class="text-ink/40">({{ String(i + 1).padStart(2, '0') }})</span>
-                        <span class="text-ink">{{ piece.caption }}</span>
-                    </span>
-                    <span class="placard text-right text-ink/40">{{ piece.year }}</span>
-                </figcaption>
-                <p class="placard mt-2 text-ink/40">{{ piece.medium }}</p>
-            </figure>
+                    <figcaption class="mt-4 flex items-baseline justify-between gap-4 border-t border-ink/15 pt-3"
+                        data-reveal>
+                        <span class="placard flex gap-3">
+                            <span class="text-ink/40">({{ String(i + 1).padStart(2, '0') }})</span>
+                            <span class="text-ink">{{ piece.caption }}</span>
+                        </span>
+                        <span class="placard text-right text-ink/40">{{ piece.year }}</span>
+                    </figcaption>
+                    <p class="placard mt-2 text-ink/40">{{ piece.medium }}</p>
+                </figure>
+            </div>
         </div>
 
+
         <p class="mt-16 md:mt-28" data-reveal>
-            <a href="https://www.youtube.com/@smthrns9166" target="_blank" rel="noopener noreferrer" v-magnetic="0.22"
+            <a href="https://www.instagram.com/smthrnn" target="_blank" rel="noopener noreferrer" v-magnetic="0.22"
                 class="link-wipe display text-3xl inline-block" data-cursor="Watch">
-                More on YouTube ↗
+                More on Instagram ↗
             </a>
         </p>
     </section>
