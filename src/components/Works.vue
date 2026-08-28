@@ -162,7 +162,7 @@ onUnmounted(() => window.removeEventListener('mousemove', onPointerMove))
                                 :class="project.gradient" data-panel-item>
 
                                 <img v-if="project.image" :src="project.image" :alt="project.name"
-                                    class="absolute inset-0 h-full w-full object-contain z-0" />
+                                    class="absolute inset-0 h-full w-full object-contain z-0" loading="lazy" />
 
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 pointer-events-none">
