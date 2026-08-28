@@ -1,5 +1,5 @@
 # Made with Vue 3 + TypeScript + Vite
 
-Experimental Portfolio 2026 - Fros DC
+Experimental Portfolio
 
 
