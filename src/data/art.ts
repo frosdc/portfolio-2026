@@ -9,7 +9,7 @@
 
     import tm from '../img/art/tm.webp'
     import hirono from '../img/art/hirono.webp'
-    import sketch from '../img/art/sketch.webp'
+    import levi from '../img/art/levi.webp'
     import trainOfThought from '../img/art/train-of-thought.webp'
     // import sky from '../img/art/sky.webp'
     // import gap from '../img/art/gap.webp'
@@ -41,7 +41,7 @@ export const artPieces: ArtPiece[] = [
     medium: PHONE,
     year: '2025',
     gradient: 'bg-linear-to-tr from-black via-stone-900 to-amber-900/70',
-    image: sketch
+    image: levi
 },
 {
     id: 'art-4',

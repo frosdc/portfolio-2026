@@ -22,7 +22,7 @@ onUnmounted(() => trigger?.kill())
 <template>
     <div class="pointer-events-none fixed inset-x-0 bottom-0 z-50 flex items-end justify-between px-gutter py-gutter mix-blend-difference"
         aria-hidden="true">
-        <p class="placard text-paper/70">©2026</p>
+        <p class="placard text-paper/70 lowercase">©2026-dfrosary@gmail.com</p>
         <p class="placard text-paper/70 tabular-nums">
             {{ String(progress).padStart(3, '0') }}<span class="text-paper/40">/100</span>
         </p>

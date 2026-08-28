@@ -62,7 +62,7 @@ function toTop(e: MouseEvent) {
 
         <p class="display m-0 mt-24 w-full text-center leading-none md:mt-40 opacity-75 ft-mono"
             style="font-size: clamp(3rem, 24vw, 24rem); letter-spacing: -0.05em" data-reveal>
-            FROS DC
+            FROSDC
         </p>
 
         <div class="rule mt-8"></div>

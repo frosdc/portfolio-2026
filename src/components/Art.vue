@@ -40,7 +40,7 @@ const hang = [
             <figure v-for="(piece, i) in artPieces" :key="piece.id" class="col-span-6 m-0"
                 :class="hang[i % hang.length].span" :data-speed="hang[i % hang.length].speed">
                 <div class="group relative w-full overflow-hidden bg-[#ecebe7]" :class="hang[i % hang.length].ratio"
-                    data-cursor="View" data-reveal>
+                    data-cursor="Viewing" data-reveal>
                     <img v-if="piece.image" :src="piece.image" :alt="piece.caption"
                         class="absolute inset-0 h-full w-full object-cover transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] grayscale group-hover:grayscale-0 group-hover:scale-[1.04]"
                         loading="lazy" />

@@ -29,7 +29,7 @@
         name: 'OA ATS',
         tagline: 'One Access ATS',
         description:
-        'An applicant tracking system for internal hiring — moves candidates through every stage of the pipeline, from application to offer, in one shared view.',
+        'An applicant tracking system for internal hiring, moves candidates through every stage of the pipeline, from application to offer, in one shared view.',
         tags: ['Laravel', 'SQL', 'Daisy UI', 'JQuery'],
         link: '#',
         gradient: 'bg-gradient-to-br from-neutral-700 to-neutral-950',
@@ -55,7 +55,7 @@
         name: 'Cashflow App',
         tagline: 'FD | Cashflow App',
         description:
-        'A cash flow tracker for logging income and expenses, with on-demand PDF reports for month-end reviews.',
+        'An extension to Feature Digital App that tracks fiat and crypto payments, complete with on-demand PDF reporting for month-end reviews.',
         tags: ['TypeScript', 'Laravel API', 'Laravel Sanctum', 'DomPDF', 'ESLint + TypeScript ESLint', 'Tailwind CSS'],
         link: '#',
         gradient: 'bg-gradient-to-br from-black to-neutral-800',
@@ -81,7 +81,7 @@
         name: 'Feature Digital App',
         tagline: 'Scan it. Process it. Done.',
         description:
-        'A progressive web app that scans documents via OCR, cross-checks data through Google APIs, and pushes real-time notifications — installable straight to a phone\'s home screen.',
+        'A progressive web app (PWA) that scans documents via OCR, cross-checks data through Google APIs, and pushes real-time notifications, installable straight to a phone\'s home screen.',
         tags: ['React JS', 'Laravel API', 'Laravel Sanctum', 'Google API', 'PDF/OCR', 'ESLint', 'Tailwind CSS', 'vite-plugin-pwa', 'web-push'],
         link: '#',
         gradient: 'bg-gradient-to-br from-black to-neutral-800',
@@ -95,7 +95,7 @@
         tagline: ' OA mobile app website',
         description:
         'A responsive promotional landing page designed to showcase the features of the OA mobile app and drive user engagement.',
-        tags: ['TypeScript', 'Laravel API', 'Laravel Sanctum', 'DomPDF', 'ESLint + TypeScript ESLint', 'Tailwind CSS'],
+        tags: [ 'HTML5', 'JavaScript', 'CSS', 'Tailwind CSS'],
         link: 'https://mobile.accesshealthcarestaffing.com/',
         gradient: 'bg-gradient-to-br from-black to-neutral-800',
         period: 'October 2025',

@@ -56,7 +56,7 @@ const padded = () => String(count.value).padStart(3, '0')
 <template>
     <div v-if="!gone" ref="root" class="preloader">
         <div class="preloader__line placard flex items-baseline justify-between">
-            <span>Fros DC — Portfolio 2026</span>
+            <span>FrosDC — Portfolio 2026</span>
             <span class="tabular-nums">{{ padded() }}</span>
         </div>
 

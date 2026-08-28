@@ -28,7 +28,7 @@ function goTo(e: MouseEvent, id: string) {
     <header
         class="fixed inset-x-0 top-0 z-50 flex items-baseline justify-between gap-4 px-gutter py-gutter mix-blend-difference">
         <a href="#top" class="placard whitespace-nowrap text-paper" @click="goTo($event, 'top')">
-            Fros DC
+            FrosDC
         </a>
 
         <p class="placard hidden text-paper/70 tabular-nums md:block">Manila, PH — {{ time }}</p>

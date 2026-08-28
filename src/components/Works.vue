@@ -185,7 +185,8 @@ onUnmounted(() => window.removeEventListener('mousemove', onPointerMove))
                                 </ul>
 
                                 <p class="mt-8" data-panel-item>
-                                    <a v-if="!project.internal" :href="project.link" class="link-wipe placard text-ink"
+                                    <a v-if="!project.internal" :href="project.link" target="_blank"
+                                        rel="noopener noreferrer" class="link-wipe placard text-ink"
                                         data-cursor="Visit">
                                         View project ↗
                                     </a>
